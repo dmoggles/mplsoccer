@@ -108,7 +108,6 @@ class BasePitch(ABC):
                  shade_middle=False, shade_color='#f2f2f2', shade_zorder=0.7,
                  pitch_length=None, pitch_width=None, goal_type='line', goal_alpha=1,
                  line_alpha=1, axis=False, label=False, tick=False, corner_arcs=False):
-                 ):
 
         # initialize attributes
         self.pitch_type = pitch_type
@@ -237,7 +236,7 @@ class BasePitch(ABC):
                 f'line_alpha={self.line_alpha!r}, label={self.label!r}, '
                 f'tick={self.tick!r}, axis={self.axis!r}, spot_scale={self.spot_scale!r}, '
                 f'corner_arcs={self.corner_arcs!r})'
-               )
+                )
 
     def _validation_checks(self):
         # pitch validation
@@ -499,7 +498,6 @@ class BasePitch(ABC):
                 t1, t2 = thetas[i]
                 self._draw_arc(ax, x, y, self.diameter_corner1, self.diameter_corner2,
                                theta1=t1, theta2=t2, **circ_prop)
-
 
         # draw center and penalty spots
         if self.spot_scale > 0:
