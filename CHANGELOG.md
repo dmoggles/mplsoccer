@@ -1,3 +1,9 @@
+:rocket: Version 1.2.1
+----------------------
+
+### Changes
+* Added ability to supply alternative text to pizza charts to display in the slice label
+
 :rocket: Version 1.2.0
 ----------------------
 
